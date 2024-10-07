@@ -1,3 +1,5 @@
+package chapter2;
+
 public class Constant {
     public static void main(String[] args) {
         // 상수 선언하기

@@ -1,3 +1,5 @@
+package chapter2;
+
 public class Variable {
     public static void main(String[] args) {
         // 자바의 정수 자료형 4가지
