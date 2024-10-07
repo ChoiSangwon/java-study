@@ -2,7 +2,7 @@ package classpart;
 
 public class Student {
     int studentId;
-    String studentName;
+    private String studentName;
     int grade;
     String address;
 
@@ -18,11 +18,12 @@ public class Student {
         System.out.println(studentName + "," + address); // 이름,주소 출력
     }
 
-    // public static void main(String[] args) {
-    // Student studentAhn = new Student();
-    // studentAhn.studentName = "안연수";
+    public static void main(String[] args) {
+        Student studentAhn = new Student();
+        studentAhn.setStudentName("Asdasd");
+        // studentAhn.studentName = "안연수"; //
 
-    // System.out.println(studentAhn.studentName); // 안연수
-    // System.out.println(studentAhn.getStudentName()); // 안연수
-    // }
+        System.out.println(studentAhn.studentName); // 안연수
+        System.out.println(studentAhn.getStudentName()); // 안연수
+    }
 }
