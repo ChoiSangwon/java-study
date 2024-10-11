@@ -25,6 +25,12 @@ public class Student {
         return false;
     }
 
+    // hashCode 메서드 재정의, 코드 값으로 학번을 반환하도록 변경
+    @Override
+    public int hashCode() {
+        return studentId;
+    }
+
     public String getStudentName() {
         return studentName;
     }
