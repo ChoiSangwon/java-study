@@ -12,6 +12,19 @@ public class Student {
         return studentName + ", " + studentId;
     }
 
+    // equls 메서드 재정의, 단순 주소값이 아닌 학생의 id가 같으면 같다고 판별.
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Student) {
+            Student std = (Student) obj;
+            if (this.studentId == std.studentId)
+                return true;
+            else
+                return false;
+        }
+        return false;
+    }
+
     public String getStudentName() {
         return studentName;
     }
